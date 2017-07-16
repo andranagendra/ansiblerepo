@@ -1,0 +1,26 @@
+5:45 PM 7/11/2017
+
+
+package 'httpd' do
+action :install
+end
+
+service 'httpd' do
+action :start
+end
+
+package 'apache2' do
+action :install
+end
+
+service 'apache2' do
+action :start
+end
+
+package 'nginx' do
+action :install
+end
+
+service 'nginx' do
+action :start
+end
